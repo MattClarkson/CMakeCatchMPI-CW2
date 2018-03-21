@@ -15,7 +15,7 @@
 #include "catch.hpp"
 #include "ccmpiCatchMain.h"
 #include "ccmpiMyFunctions.h"
-
+#include <iostream>
 #include <mpi.h>
 
 TEST_CASE( "5. MPI Pi Test", "[CW2]" ) {
