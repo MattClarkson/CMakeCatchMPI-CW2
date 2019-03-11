@@ -19,18 +19,18 @@
 namespace ccmpi {
 
 //-----------------------------------------------------------------------------
-void GetFirstAndLastIndex(const int& numThreads,
+void GetFirstAndLastIndex(const int& numberOfThreads,
                           const unsigned long int& i,
                           const double& elementsPerThread,
-                          const unsigned long int& numberElements,
+                          const unsigned long int& numberOfElements,
                           unsigned long int& first,
                           unsigned long int& last)
 {
   first = i * elementsPerThread + 1;
   last = ((i + 1) * elementsPerThread + 1) - 1;
   if (last < first) last = first;
-  if (last > numberElements) last = numberElements;
-  if (i + 1 == numThreads) last = numberElements;
+  if (last > numberOfElements) last = numberOfElements;
+  if (i + 1 == numberOfThreads) last = numberOfElements;
 }
 
 
@@ -86,7 +86,7 @@ double EvaluateGregoryLeibnizSeries(unsigned long int startingTermNumber,
 
 
 //-----------------------------------------------------------------------------
-double EvaluatePiUsingOpenMP(unsigned long int numberElements)
+double EvaluatePiUsingOpenMP(unsigned long int numberOfElements)
 {
   return 0.0;
 }

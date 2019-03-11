@@ -106,7 +106,7 @@ CMAKECATCHMPI_WINEXPORT double EvaluateGregoryLeibnizSeries(unsigned long int st
  *
  * \brief Computes Pi, using the Gregory Leibniz Series for the specified numberOfElements
  */
-CMAKECATCHMPI_WINEXPORT double EvaluatePiUsingOpenMP(unsigned long int numberElements);
+CMAKECATCHMPI_WINEXPORT double EvaluatePiUsingOpenMP(unsigned long int numberOfElements);
 
 } // end namespace
 
