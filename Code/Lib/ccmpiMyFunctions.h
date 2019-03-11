@@ -75,17 +75,17 @@ unsigned long int SumSeries(const unsigned long int* const values, unsigned long
  *
  * \see https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80
  *
- * So to evaluate the first 3 terms its:
+ * So to evaluate the first 3 terms it's:
  * \code{.cpp}
  * double sum = ccmpi::EvaluateGregoryLeibnizSeries(1, 3);
  * \endcode
- * and to evaluate the 1000th to 2000th term its:
+ * and to evaluate the 1000th to 2000th term it's:
  * \code{.cpp}
  * double sum = ccmpi::EvaluateGregoryLeibnizSeries(1000, 2000);
  * \endcode
  *
  * So, you can compute Pi/4.0 by spreading your processing over say 5 threads,
- * and wikipedia says you need about 5 billion terms.
+ * and Wikipedia says you need about 5 billion terms.
  *
  * eg.
  *

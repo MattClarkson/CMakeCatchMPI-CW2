@@ -31,13 +31,13 @@ TEST_CASE( "6. MPI Triangle Number Test", "[CW2]" ) {
   // Basic Plan: Practice splitting memory blocks.
   // 1. Create an array of numberOfElements
   // 2. Fill with 1...numberOfElements
-  // 3. Split array into multiple blocks, send to each node.
+  // 3. Split array into multiple blocks, send to each node
   // 4. Each node computes the sum of their block
-  // 5. Each node returns their sum to the root which is summed on the root to give a combined total on the root node.
+  // 5. Each node returns their sum to the root which is summed on the root to give a combined total on the root node
   // 6. Each node ALSO returns their memory block to the root node, which should be saved in a different array
   // 7. On the root note, the total of the original array,
   //    returned combined array and the combined total should all be equal
-  //    and furthermore should be equal to (n (n+1)) / 2.0;
+  //    and furthermore should be equal to (n (n+1)) / 2.0
 
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &size);
