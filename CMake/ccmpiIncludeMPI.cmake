@@ -13,7 +13,9 @@
 #============================================================================*/
 
 if(CMAKECATCHMPI_USE_MPI)
+
   find_package(MPI REQUIRED)
+
   message("Found MPI, with mpiexec=${MPIEXEC}")
 
   # Assume, for the purpose of this example project, that we are doing c++.
