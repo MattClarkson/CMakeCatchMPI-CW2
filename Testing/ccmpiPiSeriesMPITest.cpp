@@ -51,6 +51,6 @@ TEST_CASE( "5. MPI Pi Test", "[CW2]" ) {
   }
   else
   {
-    REQUIRE(pi == Approx( 0.0 )); // i.e. non-root nodes wont have the correct answer.
+    REQUIRE(pi == Approx( 0.0 )); // i.e. non-root nodes won't have the correct answer.
   }
 }
