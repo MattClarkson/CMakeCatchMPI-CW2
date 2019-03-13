@@ -75,7 +75,7 @@ TEST_CASE( "6. MPI Triangle Number Test", "[CW2]" ) {
     // 2. Check the sum of the series.   (implemented in Q1)
 
     /////////////////////////////////////////////////////////////////////////////
-    // End of your code
+    // End of your code. [1 mark]
     /////////////////////////////////////////////////////////////////////////////
   }
 
@@ -85,11 +85,11 @@ TEST_CASE( "6. MPI Triangle Number Test", "[CW2]" ) {
   // Start of your code
   /////////////////////////////////////////////////////////////////////////////
 
-  // 1. Send a block of data (subsetOfArray) to all nodes (including root) in the MPI world.
-  // 2. Sum the local array subsetOfArray
-  // 3. Send all these local sums back to root, and sum on root.
-  // 4. Copy blocks of memory from subsetOfArray on each node into repopulatedArray.
-  // 5. On root node only, check the totals
+  // 1. Send a block of data (subsetOfArray) to all nodes (including root) in the MPI world. [3 marks]
+  // 2. Sum the local array subsetOfArray. [1 mark]
+  // 3. Send all these local sums back to root, and sum on root. [2 marks]
+  // 4. Copy blocks of memory from subsetOfArray on each node into repopulatedArray. [2 marks]
+  // 5. On root node only, check the totals [1 mark]
   //    in:
   //        sumBySummingEachSum
   //        sumBySummingReturnedMemory
